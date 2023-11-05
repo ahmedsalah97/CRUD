@@ -1,0 +1,108 @@
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.711) ,rgba(0, 0, 0, 0.711)) , url('../images/me.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+/* .icons i {
+    border: solid white 2px;
+    border-radius: 50%;
+    padding: 2px;
+} */
+
+.icons div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:solid white 2px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all .5s;
+    
+
+
+}
+.icons div:hover{
+    color: tomato;
+    border-color: tomato;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color:tomato;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color:tomato;
+
+}
+.big{
+    font-size: 70px;
+    color:rgba(0, 0, 0, 0.411) ;
+}
+
+.line::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: tomato;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50% , -50%);
+    transition: all 1s;
+}
+.item:hover .line::after{
+    width: 100px;
+}
+.anch{
+    width: 70px;
+    height: 70px;
+    background-color: burlywood;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+     top: 0;
+}
+button[hamada='aa']{
+    background-color:red
+}
+.cur_img{
+    width: 150px;
+    height: 150px;
+    transform: translateY(-50%);
+}
+.carousel-indicators [data-bs-target]{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.carousel-indicators button.active{
+    background-color: gray;
+}
+@font-face {
+    font-family: DancingScript ;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Martel ;
+    src: url(../fonts/Martel-Black.ttf) , url(../fonts/Martel-ExtraBold.ttf) , url(../fonts/Martel-Light.ttf);
+}
+p{
+    font-family: DancingScript;
+}
+h2{
+    font-family: Martel;
+    font-weight: 900;
+}
+
+/*
+
+*/
+
+

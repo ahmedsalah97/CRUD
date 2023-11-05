@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+   
+ 
+</head>
+<body>
+
+
+<div class="container">
+    <div class="my-3">
+        <label for="pNanme">Product Name</label>
+        <input type="text" class="form-control"  id="pNanme">
+        <div class="d-none alert alert-danger alertName">
+            <p>Name must start with capital letter , min 3 , max 5</p>
+        </div>
+    </div>
+    <div class="my-3">
+        <label for="pPrice">Product price</label>
+        <input type="text" class="form-control"  id="pPrice">
+        <div class="d-none alert alert-danger alertPrice">
+            <p>invalid price</p>
+        </div>
+    </div>
+    <div class="my-3">
+        <label for="pCategory">Product Category</label>
+        <input type="text" class="form-control"  id="pCategory">
+
+    </div>
+    <div class="my-3">
+        <label for="pDesc">Product Desc</label>
+        <textarea type="text" class="form-control"  id="pDesc"></textarea>
+
+    </div>
+    <button onclick="addProduct()" id="addBtn" class="btn btn-info">Add product</button>
+
+
+</div>
+
+<div class="container py-5">
+    <input onkeyup="search()" placeholder="Search....." type="search" class="form-control my-2" id="searchValue">
+   
+    <table class="table table-striped">
+        <thead>
+            <tr>
+               
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Desc</th>
+                <th>update</th>
+                <th>Delete</th>
+              
+            </tr>
+        </thead>
+        <tbody id="tData">
+          
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
